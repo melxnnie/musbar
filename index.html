@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Musée Refonte</title>
+    <link href="assets/css/custom.css" rel="stylesheet"/>
+    <link href="assets/css/fonts.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="sombre.js" defer></script>
+
+
+
+    <!-- Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+
+    <!-- Lemon Milk -->
+    <link href="https://fonts.cdnfonts.com/css/lemon-milk" rel="stylesheet">
+
+    <link rel="stylesheet" media="screen" href="assets/swiper/swiper-bundle.min.css">
+
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+<header>
+    <section class="nav">
+        <div class="header-left">
+            <div class="logo">
+                <a href="index.html"><img class="image-logo" src="assets/img/logo.png" alt="logo"></a>
+            </div>
+
+            <div id="menu-left" class="bricolage-grotesque menu">
+                <div class="exposition">
+                    <a href="#exposition"><p>Expositions</p></a>
+                </div>
+                <div class="agenda">
+                    <a href="#agenda"><p>Agenda</p></a>
+                </div>
+                <div class="a-propos">
+                    <a href="#"><p>A propos</p></a>
+                </div>
+                <div class="info-pratiques">
+                    <a href="#"><p>Informations pratiques</p></a>
+                </div>
+            </div>
+
+            <a class="menu-btn" id="menu-burger">
+                <i id="icon" class="fa-solid fa-bars"></i>
+            </a>
+
+        </div>
+        <div class="bricolage-grotesque header-right">
+            <div class="billeterie">
+                <a href="#"><p>Billeterie</p></a>
+            </div>
+            <div class="langue">
+                <select name="langues" class="selecteur-langues" alt="selecteur de langues">
+                    <option value="">FR</option>
+                    <option value="ENG">ENG</option>
+                </select>
+            </div>
+            <div class="recherche">
+                <input type="text" id="recherche" placeholder="Rechercher..." autocomplete="off">
+                <label for="recherche">
+                    <img class="image-loupe" src="assets/img/loupe.svg" alt="barre de recherche">
+                </label>
+            </div>
+
+            <button id="toggle-theme" class="theme-button">Mode Sombre/Clair</button> <!--Bouton JS-->
+
+        </div>
+    </section>
+</header>
+
+<main>
+    <section>
+        <div class="banner">
+            <div class="titre-horaire">
+                <h1 class="titre-top-content">MUSÉE DES<br> BEAUX ART<br> DE ROUEN</h1>
+                <div class="horaire">
+                    <p class="texte-top-content">Ouvert aujourd'hui<br> de 10h à 18h </p>
+                    <div class="point-actif">
+                        <i class="fa-solid fa-circle" style="color: #09cc09"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="exposition" class="container">
+        <h2 class="texte-temporaire">Expositions temporaires</h2>
+        <div class="card" style="margin-left: 100px">
+            <div>
+                <img src="assets/img/bauhaus.webp"
+                     alt="Couverture de la collection: 'Le Temps des Collections Reconstruire'">
+            </div>
+            <div class="texte">
+                <h3 class="lemon-milk">Le Temps des Collections<br> Reconstruire...</h3>
+                <div class="bricolage-grotesque body">
+                    <span class="dates">30 Novembre 2024 - 2 Juin 2025</span>
+                    <p>Pour sa 12e édition du Temps des Collections, la Métropole Rouen Normandie<br> explore le thème
+                        de la Reconstruction en écho aux commémorations de la<br> Seconde Guerre mondiale et des enjeux
+                        de
+                        l’après-guerre.</p>
+                    <div class="link">
+                        <a href="#">Découvrir l’exposition <img class="fleche-marge" src="assets/img/fleche.svg"
+                                                                style="width: 17px; height: 16.5px;"> </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card lemon-milk" style="padding-top: 0px;">
+            <div class="texte">
+                <h3 class="lemon-milk">Salammbô. de Flaubert à <br>Carthage (en Tunisie)</h3>
+                <div class="bricolage-grotesque body">
+                    <span class="dates">24 Septembre 2024 - 12 Janvier 2025</span>
+                    <p>L’exposition Salammbô explore l’héritage du mythe à travers 50 œuvres<br> franco-tunisiennes,
+                        mêlant
+                        arts et archéologie.</p>
+                    <div class="link">
+                        <a href="#">Découvrir l’exposition <img class="fleche-marge" src="assets/img/fleche.svg"
+                                                                style="width: 17px; height: 16.5px;"> </a>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <img src="assets/img/flaubert.webp"
+                     alt="Couverture de la collection: 'Salammbô. de Flaubert à Carthage (en Tunisie)'">
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="expo-perm">
+            <div class="image-peinture"></div>
+            <div class="texte-titre-cat">
+                <h2 class="lemon-milk texte-permanente">EXPOSITION PERMANENTE</h2>
+                <div class="texte-plus">
+                    <p class="bricolage-grotesque body">
+                        Du romantisme à l’impressionnisme, en passant par l’Europe baroque,<br>
+                        voyagez dans le temps grâce à nos collections diverses et variées
+                    </p>
+                    <div style="padding-top: 30px;" class="link bricolage-grotesque">
+                        <a href="collections.html">Découvrir nos collections <img class="fleche-marge"
+                                                                               src="assets/img/fleche.svg"
+                                                                               style="width: 17px; height: 16.5px;">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="container2">
+        <div class="orga-actu">
+            <div>
+                <div class="orga-texte">
+                    <h2 class="lemon-milk" style="margin-bottom: 20px;">FLASH ACTU</h2>
+                    <p class="bricolage-grotesque body">Retrouvez directement sur votre smartphone deux <br>parcours
+                        commentés pour découvrir les chefs-d'oeuvre<br> du XVIe au XXe siècle ainsi que la collection
+                        Impressionniste.</p>
+                    <div class="link bricolage-grotesque">
+                        <a href="#">Découvrir l’actualité
+                            <img class="fleche-marge" src="assets/img/fleche.svg" style="width: 17px; height: 16.5px;">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <img style="margin-top: 20px;" src="assets/img/smart.png">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="assets/img/nuit_2.webp">
+                </div>
+                <div class="orga-texte">
+                    <h2 class="lemon-milk" style="margin-bottom: 20px;">Newsletter</h2>
+                    <p class="bricolage-grotesque body">Inscrivez-vous à la newsletter pour recevoir actualités, expositions,<br>
+                        événements et offres exclusives directement dans votre boîte mail.</p>
+                    <div class="fleche-marge link bricolage-grotesque">
+                        <a href="#">S’inscrire à la newsletter <img class="fleche-marge" src="assets/img/fleche.svg"
+                                                                style="width: 17px; height: 16.5px;"> </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="agenda" class="container4">
+        <div class="block-agenda">
+            <h2 class="lemon-milk margin-title">Agenda</h2>
+            <div class="agenda-intro block-texte bricolage-grotesque body">
+                <p>Le Musée des Beaux-Arts de Rouen, fondé en 1801, abrite une prestigieuse<br> collection d'œuvres
+                    allant du XVe
+                    au XXIe siècle.Peintures, sculptures et dessins<br> célèbrent des artistes comme Monet, Caravage et
+                    Géricault. Situé au cœur de Rouen,<br> il est un trésor culturel incontournable de Normandie.</p>
+                <div class="link">
+                    <a href="#">Voir tout l'agenda <img class="fleche-marge" src="assets/img/fleche.svg"
+                                                        style="width: 17px; height: 16.5px;"> </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="slide-image">
+                            <img src="assets/img/le-pont-japonais.webp" alt="le-pont-japonais de Monet">
+                        </div>
+                        <div class="slide-text">
+                            <h3>Visite commentée : Les Incontournables du Musée des Beaux-Arts</h3>
+                            <span class="dates bricolage-grotesque">30 Juillet 2024 - 21 Aout 2025</span>
+                            <p class="bricolage-grotesque">Des visites commentées pour celles et ceux qui veulent approfondir les thématiques des collections du musée.
+                            </p>
+                            <div class="link bricolage-grotesque">
+                                <a href="#">Découvrir l’activité <img class="fleche-marge" src="assets/img/fleche.svg"
+                                                                      style="width: 17px; height: 16.5px;"> </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="slide-image">
+                            <img src="assets/img/abstrait.webp" alt="Château">
+                        </div>
+                        <div class="slide-text">
+                            <h3>Visite : Comme un echo - la danse des tarentules</h3>
+                            <span class="dates bricolage-grotesque">30 Janvier 2024 - 2 Aout 2025</span>
+                            <p class="bricolage-grotesque">Une visite tout en douceur pour découvrir le musée avec le jeune public TSA, un
+                                moment à partager en famille.
+                            </p>
+                            <div class="link bricolage-grotesque">
+                                <a href="#">Découvrir l’activité <img class="fleche-marge" src="assets/img/fleche.svg"
+                                                                      style="width: 17px; height: 16.5px;"> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="slide-image">
+                            <img src="assets/img/ceramique.webp" alt="Château">
+                        </div>
+                        <div class="slide-text">
+                            <h3>Atelier céramique par les plasticiens de La GALERIE des ARTS du FEU</h3>
+                            <span class="dates bricolage-grotesque">30 Novembre 2024 - 2 Juin 2025</span>
+                            <p class="bricolage-grotesque">En lien avec l’exposition Terres brisées, présentée actuellement au musée de la Céramique.
+                            </p>
+                            <div class="link bricolage-grotesque">
+                                <a href="#">Découvrir l’activité <img class="fleche-marge" src="assets/img/fleche.svg"
+                                                                      style="width: 17px; height: 16.5px;"> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <section class="container3"> <!--Section "Histoire du Musée"-->
+        <h2 class="lemon-milk margin-title">Histoire du Musée</h2>
+        <div class="card-histoire">
+            <div>
+                <img src="assets/img/interieur-musee.webp" alt="Photo de l'intérieur du Musée des Beaux Arts de Rouen"
+                     style="width: 740px; height: 450px;  object-fit: cover; margin-top: 30px;">
+            </div>
+            <div class="block-texte bricolage-grotesque body" style="margin-top: 0px;">
+                <p>Le Musée des Beaux-Arts de Rouen, fondé en 1801, abrite une prestigieuse<br> collection d'œuvres
+                    allant du XVe
+                    au XXIe siècle. Peintures, sculptures et dessins<br> célèbrent des artistes comme Monet, Caravage et
+                    Géricault. Situé au cœur de Rouen,<br> il est un trésor culturel incontournable de Normandie.</p>
+                <div class="link">
+                    <a href="#">Découvrir l’histoire <img class="fleche-marge" src="assets/img/fleche.svg"
+                                                          style="width: 17px; height: 16.5px;"> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+    </script>
+
+    <script>
+        var buttonMenu = document.getElementById("menu-burger");
+        var menuLeft = document.getElementById("menu-left")
+
+
+        console.log(buttonMenu);
+        buttonMenu.addEventListener("click", onClickMenu);
+
+        function onClickMenu () {
+            menuLeft.classList.toggle("menu-is-opened")
+        }
+
+    </script>
+
+</main>
+
+<footer>
+    <div class="footer">
+        <section class="table">
+            <section class="section">
+                <div style="margin-left: 0px; margin-top: 10px;">
+                    <h3>Sections</h3>
+                    <div style="margin-top: 17px;">
+                        <a style="line-height: 30px;" class="bricolage-grotesque link texte-footer" href="#">Expositions</a><br>
+                        <a style="line-height: 30px;" class="bricolage-grotesque link texte-footer" href="#">Agenda</a><br>
+                        <a style="line-height: 30px;" class="bricolage-grotesque link texte-footer" href="#">À Propos</a><br>
+                        <a style="line-height: 30px;" class="bricolage-grotesque link texte-footer" href="#">Informatiques pratiques</a><br>
+                        <a style="line-height: 30px;" class="bricolage-grotesque link texte-footer" href="#">Billeterie pratiques</a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="opening">
+                <h3>Horaires</h3>
+                <p class="bricolage-grotesque body schedule">Tous les jours
+                    <span class="h2"><br>10h00<br>18h00</span><br>hors jours feriés</p>
+            </section>
+
+            <section class="contact">
+                <h3>Contact</h3>
+                <p style="margin-top: 17px;" class="bricolage-grotesque body">Esp. Marcel Duchamp<br>76000 Rouen<br>33
+                    03 71 28 40</p>
+            </section>
+
+            <section class="icons">
+                <a href=“https://www.instagram.com/rmm_rouen/“></a><img src="assets/img/Instagram.svg"
+                                                                        alt="Instagram Account" height="50" width="50">
+                <a href=“https://www.facebook.com/rmmrouen“></a><img src="assets/img/Facebook.svg"
+                                                                     alt="Facebook Account" height="50" width="50">
+                <a href=“https://www.linkedin.com/company/réunion-des-musées-métropolitains“></a><img
+                    src="assets/img/Linkedin.svg" alt="LinkedIn Account" height="50" width="50">
+                <a href=“https://twitter.com/RMM_Rouen“></a><img src="assets/img/Twitter.svg" alt="Twitter Account"
+                                                                 height="50" width="50">
+            </section>
+        </section>
+
+        <section class="impressum">
+
+            <div>
+                <a href="logo mbr.png"><img class="logo-footer" src="assets/img/logo.png" alt="logo"></a>
+            </div>
+
+            <a class="bricolage-grotesque link texte-footer" href="#">Mentions légales</a>
+            <a class="bricolage-grotesque link texte-footer" href="#">Crédits</a>
+            <a class="bricolage-grotesque link texte-footer" href="#">Politique de confidentialité</a>
+            <a class="bricolage-grotesque link texte-footer" href="#">Condition d’utilisation</a>
+
+        </section>
+    </div>
+</footer>
+</body>
+</html>

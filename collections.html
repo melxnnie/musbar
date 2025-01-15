@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Musée Refonte</title>
+    <link href="assets/css/custom.css" rel="stylesheet"/>
+    <link href="assets/css/fonts.css" rel="stylesheet"/>
+    <link href="assets/css/collections-style.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="sombre.js" defer></script>
+
+
+        <!-- Grotesk -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    
+        <!-- Lemon Milk -->
+        <link href="https://fonts.cdnfonts.com/css/lemon-milk" rel="stylesheet">
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <link rel="stylesheet" media="screen" href="assets/swiper/swiper-bundle.min.css">
+
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+</head>
+<header>
+    <section class="nav">
+        <div class="header-left">
+            <div class="logo">
+                <a href="index.html"><img class="image-logo" src="assets/img/logo.png" alt="logo"></a>
+            </div>
+
+            <div id="menu-left" class="bricolage-grotesque menu">
+                <div class="exposition">
+                    <a href="#exposition"><p>Expositions</p></a>
+                </div>
+                <div class="agenda">
+                    <a href="#agenda"><p>Agenda</p></a>
+                </div>
+                <div class="a-propos">
+                    <a href="#"><p>A propos</p></a>
+                </div>
+                <div class="info-pratiques">
+                    <a href="#"><p>Informations pratiques</p></a>
+                </div>
+            </div>
+
+            <a class="menu-btn" id="menu-burger">
+                <i id="icon" class="fa-solid fa-bars"></i>
+            </a>
+
+        </div>
+        <div class="bricolage-grotesque header-right">
+            <div class="billeterie">
+                <a href="#"><p>Billeterie</p></a>
+            </div>
+            <div class="langue">
+                <select name="langues" class="selecteur-langues" alt="selecteur de langues">
+                    <option value="">FR</option>
+                    <option value="ENG">ENG</option>
+                </select>
+            </div>
+            <div class="recherche">
+                <input type="text" id="recherche" placeholder="Rechercher..." autocomplete="off">
+                <label for="recherche">
+                    <img class="image-loupe" src="assets/img/loupe.svg" alt="barre de recherche">
+                </label>
+            </div>
+            <button id="toggle-theme" class="theme-button">Mode Sombre/Clair</button> <!--Bouton JS-->
+        </div>
+    </section>
+</header>
+<body>
+    <main>
+        <section>
+            <div class="banner">
+                <div class="texte-top-content">
+                    <h1 style="text-align: start" class="titre-top-content">NOS<br> COLLECTIONS</h1>
+                    <div class="description bricolage-grotesque body ">
+                        <p>Du romantisme à l’impressionnisme, en passant par l’Europe baroque, voyagez dans le temps grâce à nos collections diverses et variées</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="les-mouvements">
+            <div class="catalogue-mouvements">
+                <div class="titre-mouvements">
+                    <h2>LES MOUVEMENTS</h2>
+                </div>
+            <div class="mouvements-reverse">
+                <div class="boutons-mouvements">
+                    <div class="bricolage-grotesque link bouton">
+                        <a href="#">Impressionnisme <img class="fleche-marge" src="images/fleche.svg"></a>
+                    </div> 
+                    <div class="bricolage-grotesque link bouton">
+                        <a href="#">Europe baroque <img class="fleche-marge" src="images/fleche.svg" ></a>
+                    </div> 
+                    <div class="bricolage-grotesque link bouton">
+                        <a href="#">Grand siècle français <img class="fleche-marge" src="images/fleche.svg"></a>
+                    </div> 
+                    <div class="bricolage-grotesque link bouton">
+                        <a href="#">Renaissance <img class="fleche-marge" src="images/fleche.svg"></a>
+                    </div> 
+                    <div class="bricolage-grotesque link bouton">
+                        <a href="#">Romantisme <img class="fleche-marge" src="images/fleche.svg"></a>
+                    </div> 
+                    <div class="bricolage-grotesque link bouton">
+                        <a href="#">Peinture de genre <img class="fleche-marge" src="images/fleche.svg"></a>
+                    </div>
+                </div>
+            <div class="card-mouvements">
+                <img class="card-images" src="images/amandier.webp" alt="peinture amandier en fleur de van gogh">
+                <div class="description-mouvements">
+                    <div class="bricolage-grotesque body sous-texte-impressionnisme">
+                        <p><span class="impressionisme">Impressionnisme</span></p>
+                        <p>Vincent Van Gogh</p>
+                        <p>Amandier en fleur 1890, 73,5 × 92 cm</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="les-styles">
+            <div class="card-styles">
+                <img class="card-images" src="images/rouen.webp" alt="peinture amandier en fleur de van gogh">
+                <div class="description-styles">
+                    <div class="bricolage-grotesque body sous-texte-rouen">
+                        <p><span>Rouen</span></p>
+                        <p>Claude Monet</p>
+                        <p>La scène à Rouen 1872, 54 x 66,5 cm</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="catalogue-styles">
+                <div class="titre-styles">
+                    <h2>LES STYLES</h2>
+                </div>
+                <div class="boutons-styles">
+                    <div class="bricolage-grotesque link bouton l2">
+                        <a href="#">Impressionnisme <img class="fleche-marge" src="images/fleche.svg"></a>
+                    </div>
+                    <div class="bricolage-grotesque link bouton l2">
+                        <a href="#">Europe baroque <img class="fleche-marge" src="images/fleche.svg"></a>
+                    </div>
+                    <div class="bricolage-grotesque link bouton l2">
+                        <a href="#">Grand siècle français <img class="fleche-marge" src="images/fleche.svg"></a>
+                    </div>
+                    <div class="bricolage-grotesque link bouton l2">
+                        <a href="#">Renaissance <img class="fleche-marge l2" src="images/fleche.svg"></a>
+                    </div>
+                    <div class="l2 bricolage-grotesque link bouton">
+                        <a href="#">Romantisme <img class="fleche-marge" src="images/fleche.svg"></a>
+                    </div>
+                    <div class="l2 bricolage-grotesque link bouton">
+                        <a href="#">Peinture de genre <img class="fleche-marge" src="images/fleche.svg"></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="les-sculptures">
+            <div class="texte-sculptures">
+                <h2>LES SCULPTURES</h2>
+                <div class="bricolage-grotesque body description-sculptures">
+                    <p>Explorez notre collection de sculptures, où chaque œuvre révèle la créativité et le savoir-faire des artistes à travers les formes et les matériaux. Chaque pièce invite à la contemplation et à la réflexion sur l'expression humaine et la beauté.</p>
+                    <a class="bricolage-grotesque link l2" href="#">Découvrir nos sculptures <img src="images/fleche.svg" style="width: 17px; height: 16.5px;"></a>
+                </div>
+            </div>
+            <img class="galerie" src="images/galerie.png" alt="Galerie de photos de sculptures">
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <section class="table">
+                <section class="section">
+                    <div style="margin-left: 0px; margin-top: 10px;">
+                        <h3>Sections</h3>
+                        <div style="margin-top: 17px;">
+                            <a style="line-height: 30px;" class="bricolage-grotesque link texte-footer" href="#">Expositions</a><br>
+                            <a style="line-height: 30px;" class="bricolage-grotesque link texte-footer" href="#">Agenda</a><br>
+                            <a style="line-height: 30px;" class="bricolage-grotesque link texte-footer" href="#">À Propos</a><br>
+                            <a style="line-height: 30px;" class="bricolage-grotesque link texte-footer" href="#">Informatiques pratiques</a><br>
+                            <a style="line-height: 30px;" class="bricolage-grotesque link texte-footer" href="#">Billeterie pratiques</a>
+                        </div>
+                    </div>
+    
+                </section>
+    
+                <section class="opening">
+                    <h3>Horaires</h3>
+                    <p class="bricolage-grotesque body schedule">Tous les jours
+                        <span class="h2"><br>10h00<br>18h00</span><br>hors jours feriés</p>
+                </section>
+    
+                <section class="contact">
+                    <h3>Contact</h3>
+                    <p style="margin-top: 17px;" class="bricolage-grotesque body">Esp. Marcel Duchamp<br>76000 Rouen<br>33
+                        03 71 28 40</p>
+                </section>
+    
+                <section class="icons">
+                    <a href=“https://www.instagram.com/rmm_rouen/“></a><img src="assets/img/Instagram.svg"
+                                                                            alt="Instagram Account" height="50" width="50">
+                    <a href=“https://www.facebook.com/rmmrouen“></a><img src="assets/img/Facebook.svg"
+                                                                         alt="Facebook Account" height="50" width="50">
+                    <a href=“https://www.linkedin.com/company/réunion-des-musées-métropolitains“></a><img
+                        src="assets/img/Linkedin.svg" alt="LinkedIn Account" height="50" width="50">
+                    <a href=“https://twitter.com/RMM_Rouen“></a><img src="assets/img/Twitter.svg" alt="Twitter Account"
+                                                                     height="50" width="50">
+                </section>
+            </section>
+    
+            <section class="impressum">
+    
+                <div>
+                    <a href="logo mbr.png"><img class="logo-footer" src="assets/img/logo.png" alt="logo"></a>
+                </div>
+    
+                <a class="bricolage-grotesque link texte-footer" href="#">Mentions légales</a>
+                <a class="bricolage-grotesque link texte-footer" href="#">Crédits</a>
+                <a class="bricolage-grotesque link texte-footer" href="#">Politique de confidentialité</a>
+                <a class="bricolage-grotesque link texte-footer" href="#">Condition d’utilisation</a>
+    
+            </section>
+        </div>
+    </footer>
+
+    <script>
+        var buttonMenu = document.getElementById("menu-burger");
+        var menuLeft = document.getElementById("menu-left")
+
+
+        console.log(buttonMenu);
+        buttonMenu.addEventListener("click", onClickMenu);
+
+        function onClickMenu () {
+            menuLeft.classList.toggle("menu-is-opened")
+        }
+
+    </script>
+
+</body>
+</html>
